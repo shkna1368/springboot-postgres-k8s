@@ -1,12 +1,12 @@
 # springboot-postgres-k8s
-springboot-postgres-k8s
-before install docker:
-enable hyperv
-disable wsl2
+springboot-postgres-k8s <br/>
+before install docker:<br/>
+enable hyperv <br/>
+disable wsl2 <br/>
 
-install docker desktop:
-in install sisable wsl2
-in last step,in dialogbox confirm use hayperv
+install docker desktop: <br/>
+in install sisable wsl2 <br/>
+in last step,in dialogbox confirm use hayperv <br/>
 
 if docker has problem in startup,enter below command in terminal:
 
