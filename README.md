@@ -84,6 +84,9 @@ kubectl logs springboot-postgres-k8s-ff4f85f95-t5td2 <br/>
 kubectl port-forward svc/springboot-postgres-k8s 8080:8080 <br/>
 
 open browser : <br/>
+
+http://localhost:8080/swagger-ui/index.html <br/>
+or <br/>
 http://localhost:8080/api/employees <br/>
 
 open another terminal: <br/>
