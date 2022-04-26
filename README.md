@@ -88,7 +88,7 @@ http://localhost:8080/api/employees <br/>
 
 open another terminal: <br/>
 minikube dashboard <br/>
-see deployment,service,confihmap,secret and .... <br/>
+see deployment,service,configmap,secret and .... <br/>
 
 
 
