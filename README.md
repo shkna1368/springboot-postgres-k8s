@@ -1,3 +1,43 @@
+
+# springboot-k8s
+minikube start --driver=docker
+
+minikube docker-env
+
+@FOR /f "tokens=*" %i IN ('minikube -p minikube docker-env --shell cmd') DO @%i
+
+docker build -t sp-k8s-demo:1.0 .
+
+docker images
+
+kubectl create deployment sp-k8s --image=sp-k8s-demo:1.0 --port=8080
+
+
+
+kubectl get deployments
+
+kubectl get pods
+
+kubectl logs sp-k8s-58dc4b544f-rpxjq
+
+kubectl expose deployment sp-k8s --type=ClusterIP
+kubectl get service
+minikube service sp-k8s --url
+kubectl delete service sp-k8s
+
+kubectl delete deployment sp-k8s
+
+
+kubectl port-forward svc/sp-k8s 8080:8080
+
+
+
+
+
+open another terminal:
+minikube dashboard
+
+
 # springboot-postgres-k8s
 springboot-postgres-k8s <br/>
 before install docker:<br/>
